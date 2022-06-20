@@ -29,11 +29,6 @@ A aplicação em um portfólio pessoal, onde consta informações sobre minha pe
 - Front end web: Gh
 - Banco de dados: /
 
-# Como executar o projeto
-
-## Back end
-Pré-requisitos: Java 11
-
 # Autor
 
 Ghabriel da Silva Molina Girardi
