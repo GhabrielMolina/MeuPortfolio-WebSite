@@ -1,0 +1,381 @@
+body{
+    /* background-color: #111927; */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+em{
+    font-style: italic;
+}
+
+strong{
+    font-weight: bold;
+}
+
+header input{
+    display: none;
+
+}
+
+
+
+.caixaCabecalho{
+    width: 100%;
+    background: rgb(33 14 47);
+    position: fixed;
+    padding-top: 10px;
+    top: 0%;
+    z-index: 10;
+}
+    .caixaCabecalho-figure{
+        width: 100%;
+        text-align: center;
+    }
+        .caixaCabecalho-figure-img{
+            max-width: 90px;
+        }
+        .caixaCabecalho-figure-figcaption{
+            font-weight: bolder;
+            color: white;
+            text-transform: uppercase;
+            font-size: 23px;
+            border: 2px solid white;
+            padding: 3px;
+            font-style: italic;
+            border-left: 0;
+            border-right: 0;
+            margin: 0 0 1px 0;
+        }
+
+        .caixaCabecalho-nav-lista-link{
+            color: inherit;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 20px;
+            color: #C1C1C1 ;
+        }
+
+        .caixaCabecalho-nav{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+            .caixaCabecalho-nav-lista{
+                display: flex;
+                width: 85%;
+                position: absolute;
+                top: 50px;
+                justify-content: space-between;
+            }
+            
+                .caixaCabecalho-nav-lista-esquerda-itens{
+                    display:block;
+                    padding: 7px;
+                    border: 2px;
+                    border-radius: 7px;
+                    background: linear-gradient(#af024d, #210E2F);
+                }
+
+            
+                .caixaCabecalho-nav-lista-direita-itens{
+                    display:block;
+                    padding: 7px;
+                    border: 2px;
+                    border-radius: 7px;
+                    background: linear-gradient(#af024d, #210E2F);
+                }
+
+
+            .caixaCabecalho-nav-lista-link:hover{
+                text-decoration: underline;
+                font-size: 23px;
+                transition: 400ms;
+            }
+            .caixaCabecalho-nav ul li a:active{
+                color: white;
+                transition: none;
+            }
+
+.conteudoPrincipal{
+    width: 100%;
+}
+    #sobreMim{
+        padding-top: 200px;
+        /* background: repeating-linear-gradient(45deg, aquamarine, transparent 100px); */
+    }
+        .conteudoPrincipal-sobreMim-titulo{
+            font-size: 2em;
+            font-family: -webkit-body;
+            font-style: italic;
+            font-weight: bold;
+            padding: 9px 0;
+            color: aqua;
+            margin-bottom: 35px;
+
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+            /* cursor: default; */
+        }
+        .conteudoPrincipal-sobreMim{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+            .conteudoPrincipal-sobreMim-conteudo{
+                display: flex;
+                width: 75%;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                z-index: 2;
+
+                -webkit-touch-callout: none;  /* iPhone OS, Safari */
+                -webkit-user-select: none;    /* Chrome, Safari 3 */
+                -khtml-user-select: none;     /* Safari 2 */
+                -moz-user-select: none;       /* Firefox */
+                -ms-user-select: none;        /* IE10+ */
+                user-select: none;            /* Possível implementação no futuro */
+            }
+                .conteudoPrincipal-sobreMim-conteudo-p{
+                    width: 43%;
+                    text-align: center;
+                    padding: 30px;
+                    color: oldlace;
+                    font-size: 19px;
+                    font-family: 'Inconsolata', monospace;
+
+                    transition: all 290ms;
+                    border-radius: 28px;
+                    box-shadow:  -25px -25px 60px #0c111b, 
+                        30px 30px 75px #162133;
+                    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+                    opacity: 0.8;
+                    backdrop-filter: blur(12px) saturate(200%);
+                    -webkit-backdrop-filter: blur(12px) saturate(200%);
+                    /* background: linear-gradient(315deg, #0f1723, #121b2a); */
+                }
+                .conteudoPrincipal-sobreMim-conteudo-p:hover{
+                    content: " ";
+                    opacity: 1.0;
+                    transition: all 300ms;
+                }
+                    .conteudoPrincipal-sobreMim-conteudo-p a{
+                        text-decoration: none;
+                        text-transform: inherit;
+                        color: blueviolet;
+                    }
+                    .conteudoPrincipal-sobreMim-conteudo-p a:hover{
+                        content: " ";
+                        text-decoration: underline;
+                    }
+    #certificados{
+        padding-top: 144px;
+    }
+        .conteudoPrincipal-certificados-titulo{
+            font-size: 2em;
+            font-family: -webkit-body;
+            font-style: italic;
+            font-weight: bold;
+            padding: 9px 0;
+            color: aqua;
+
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+            /* cursor: default; */
+        }
+            .conteudoPrincipal-certificados-lista{
+                display: flex;
+                max-height: 750px;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+                .conteudoPrincipal-certificados-lista-itens{
+                    width: 31%;
+                    margin: 1%;
+                    height: 158px;
+                    border-radius: 25px;
+                    background: white;
+                    box-shadow: 2px 2px 10px white;
+                    transition: all 400ms;
+                }
+                .conteudoPrincipal-certificados-lista-itens:hover{
+                    content: " ";
+                    transition: all 400ms;
+                    transform:  scale(1.01);
+                    box-shadow: 4px 4px 12px white;
+                }
+                .conteudoPrincipal-certificados-lista-itens:active{
+                    content: " ";
+                    transition: all 200ms;
+                    box-shadow: 1px 1px 7px white;
+                    transform: scale(1.0);
+                    
+                }
+                    .conteudoPrincipal-certificados-lista-itens-img{
+                        display: block;
+                        height: 118px;
+                        margin: 2px auto;
+                        padding: 9px 0;
+                    }
+                    .conteudoPrincipal-certificados-lista-itens-link{
+                        color: inherit;
+                        text-decoration: none;
+                        color: #000;
+                        font-weight: bold;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        font-size: 14px;
+                        font-family: monospace;
+                    }
+    
+    #experiencias{
+        padding-top: 335px;
+        padding-bottom: 318px;
+
+    }
+        .conteudoPrincipal-experiencias-titulo{
+            font-size: 2em;
+            font-family: -webkit-body;
+            font-style: italic;
+            font-weight: bold;
+            padding: 9px 0;
+            color: aqua;
+
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+            /* cursor: default; */
+        }
+        .conteudoPrincipal-experiencias{
+            display: flex;
+            align-items: baseline;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+            .conteudoPrincipal-experiencias-conteudo{
+                width: 45%;
+            }
+                .conteudoPrincipal-experiencias-conteudo P{
+                    padding-top: 20px;
+                    text-align: left;
+                    font-size:20px;
+                    color: aqua;
+                    font-weight: bold;
+                }
+                .conteudoPrincipal-experiencias-conteudo-CPOR-img{
+                    width: 130px;
+                    float: left;
+                }
+                .conteudoPrincipal-experiencias-conteudo-PGE-img{
+                    width: 168px;
+                    float: right;
+                    margin: 15px 0 15px 20px;
+                }
+
+#contato{
+    width: 100%;
+    background: rgb(33 14 47);
+    position: relative;
+    z-index: 9;
+}
+    /* .caixaRodape-titulo{
+        font-size: 2em;
+        font-family: -webkit-body;
+        font-style: italic;
+        font-weight: bold;
+        padding: 9px 0;
+        color: aqua;
+    } */
+        .caixaRodape{
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            justify-content: flex-end;
+        }
+                .caixaRodape-conteudo-lista{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 100%;
+                }
+                    .caixaRodape-conteudo-lista-itens{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30%;
+
+                        font-size: 20px;
+                        font-family: -webkit-body;
+                        font-style: italic;
+                        font-weight: bold;
+                        color: black;
+                        text-shadow: 1px 1px 2px #000000b0;
+                    }
+                    .caixaRodape-conteudo-lista-itens-link{
+                        color: inherit;
+                        text-decoration: none;
+                    }
+                    .caixaRodape-conteudo-lista-itens-link:hover{
+                        color: aqua;
+                        text-decoration: underline;
+                    }
+                        .caixaRodape-conteudo-lista-itens img{
+                            max-width: 35px;
+                            margin-right: 5px;
+                        }
+
+        .caixaRodape-copyright{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .caixaRodape-copyright-img{
+                max-width: 50px;
+            }
+            .caixaRodape-copyright-p{
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                text-shadow: 2px 2px 3px black;
+
+                -webkit-touch-callout: none;  /* iPhone OS, Safari */
+                -webkit-user-select: none;    /* Chrome, Safari 3 */
+                -khtml-user-select: none;     /* Safari 2 */
+                -moz-user-select: none;       /* Firefox */
+                -ms-user-select: none;        /* IE10+ */
+                user-select: none;            /* Possível implementação no futuro */
+                /* cursor: default; */
+            }
+
+
+
+        
+
